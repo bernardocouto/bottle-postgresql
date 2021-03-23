@@ -1,0 +1,19 @@
+# Build
+bottle_postgresql.egg-info/
+build/
+dist/
+
+# Byte Compiled
+__pycache__/
+
+# MacOS
+.DS_Store
+
+# PyCharm
+.idea/
+
+# Virtual Environment
+.venv/
+
+# Visual Code Studio
+.vscode

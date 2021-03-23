@@ -1,0 +1,9 @@
+{
+    "database": "cropland",
+    "host": "cropland.ceuzptcphysj.sa-east-1.rds.amazonaws.com",
+    "max_connection": 10,
+    "password": "16ggmX3chwajG0NMV4YJ",
+    "port": 5432,
+    "print_sql": true,
+    "username": "main"
+}
