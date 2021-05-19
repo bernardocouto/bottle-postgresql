@@ -13,7 +13,7 @@ __pycache__/
 .idea/
 
 # Virtual Environment
-.venv/
+venv/
 
 # Visual Code Studio
 .vscode

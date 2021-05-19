@@ -16,13 +16,14 @@ setup(
         'Programming Language :: Python :: 3',
         'Topic :: Database'
     ],
-    description='PyPostgreSQLWrapper is a simple adapter for PostgreSQL with connection pooling.',
+    description='Bottle PostgreSQL is a simple adapter for PostgreSQL with connection pooling.',
+    include_package_data=True,
     install_requires=[
         'dbutils',
         'psycopg2-binary',
         'pystache'
     ],
-    keywords='database postgresql psycopg2 queries',
+    keywords='bottle database postgresql psycopg2',
     license='MIT',
     long_description=long_description,
     long_description_content_type='text/markdown',
