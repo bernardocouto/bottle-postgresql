@@ -3,6 +3,11 @@ from setuptools import find_packages, setup
 import bottle_postgresql
 import os
 
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
+
 with open(os.path.abspath('README.md')) as file:
     long_description = file.read()
 
@@ -30,6 +35,7 @@ setup(
     name='bottle-postgresql',
     packages=find_packages(),
     platforms='any',
+    py_modules=['bottle_postgresql'],
     url='https://github.com/bernardocouto/bottle-postgresql',
     version=bottle_postgresql.__version__
 )
