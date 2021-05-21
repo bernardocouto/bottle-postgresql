@@ -9,7 +9,7 @@ import pystache
 
 __author__ = 'Bernardo Couto'
 __author_email__ = 'bernardocouto.py@gmail.com'
-__version__ = '0.0.1'
+__version__ = '1.0.0'
 
 QUERIES_DIRECTORY = os.path.realpath(os.path.curdir) + '/queries/'
 
