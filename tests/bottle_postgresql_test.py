@@ -46,7 +46,7 @@ class BottlePostgreSQLTest(unittest.TestCase):
 
     def test_find_all(self):
         with self.database as connection:
-            tests = (
+            (
                 connection
                 .select('test')
                 .fields('id', 'name', 'description')
@@ -71,7 +71,7 @@ class BottlePostgreSQLTest(unittest.TestCase):
 
     def test_find_all_with_paging(self):
         with self.database as connection:
-            tests = (
+            (
                 connection
                 .select('test')
                 .fields('id', 'name', 'description')
@@ -80,7 +80,7 @@ class BottlePostgreSQLTest(unittest.TestCase):
 
     def test_find_by_id(self):
         with self.database as connection:
-            test = (
+            (
                 connection
                 .select('test')
                 .fields('id', 'name', 'description')
@@ -89,7 +89,7 @@ class BottlePostgreSQLTest(unittest.TestCase):
 
     def test_find_by_id_with_file(self):
         with self.database as connection:
-            test = (
+            (
                 connection
                 .execute('test.find_by_id', parameters={'id': 1})
                 .fetch_one()
@@ -120,4 +120,4 @@ class BottlePostgreSQLTest(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main
+    unittest.main()
