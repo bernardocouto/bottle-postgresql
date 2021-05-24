@@ -1,0 +1,3 @@
+bottle==0.12.19
+bottle-cerberus==1.1.3
+bottle-postgresql==1.0.0
