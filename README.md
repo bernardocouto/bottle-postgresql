@@ -1,4 +1,7 @@
 # Bottle PostgreSQL
+![PyPI - License](https://img.shields.io/pypi/l/bottle-postgresql?color=4B8BBE&label=License)
+![PyPI - Version](https://img.shields.io/pypi/v/bottle-postgresql?color=FFE873&label=PyPI)
+
 Bottle PostgreSQL is a simple adapter for PostgreSQL with connection pooling.
 
 ## Configuration
