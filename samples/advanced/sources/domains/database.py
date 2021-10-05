@@ -18,12 +18,13 @@ class Database(bottle_postgresql.Database):
     @staticmethod
     def configuration():
         configuration_dict = {
-            'database': environment.DATABASE_NAME,
+            'connect_timeout': environment.DATABASE_CONNECTION_TIMEOUT,
+            'dbname': environment.DATABASE_NAME,
             'host': environment.DATABASE_HOST,
-            'max_connection': environment.DATABASE_MAX_CONNECTION,
+            'maxconnections': environment.DATABASE_MAX_CONNECTION,
             'password': environment.DATABASE_PASSWORD,
             'port': environment.DATABASE_PORT,
             'print_sql': environment.DATABASE_PRINT_SQL,
-            'username': environment.DATABASE_USERNAME
+            'user': environment.DATABASE_USERNAME
         }
         bottle_postgresql.Configuration.instance(configuration_dict=configuration_dict, configuration_file=None)

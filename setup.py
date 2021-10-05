@@ -35,7 +35,9 @@ setup(
     name='bottle-postgresql',
     packages=find_packages(),
     platforms='any',
-    py_modules=['bottle_postgresql'],
+    py_modules=[
+        'bottle_postgresql'
+    ],
     url='https://github.com/bernardocouto/bottle-postgresql',
     version=bottle_postgresql.__version__
 )
