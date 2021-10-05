@@ -23,13 +23,14 @@ application = Bottle()
 application.install(JSONPlugin(json_dumps=lambda entity: json.dumps(entity, cls=JSONEncoder)))
 
 configuration_dict = {
-    'database': os.environ.get('DATABASE_NAME'),
+    'connect_timeout': os.environ.get('DATABASE_CONNECTION_TIMEOUT'),
+    'dbname': os.environ.get('DATABASE_NAME'),
     'host': os.environ.get('DATABASE_HOST'),
-    'max_connection': os.environ.get('DATABASE_MAX_CONNECTION'),
+    'maxconnections': os.environ.get('DATABASE_MAX_CONNECTION'),
     'password': os.environ.get('DATABASE_PASSWORD'),
     'port': os.environ.get('DATABASE_PORT'),
     'print_sql': os.environ.get('DATABASE_PRINT_SQL'),
-    'username': os.environ.get('DATABASE_USERNAME')
+    'user': os.environ.get('DATABASE_USERNAME')
 }
 
 configuration = Configuration(configuration_dict=configuration_dict)

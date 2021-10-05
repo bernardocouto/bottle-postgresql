@@ -8,13 +8,14 @@ Bottle PostgreSQL is a simple adapter for PostgreSQL with connection pooling.
 The configuration can be done through **JSON** file or by **Dict** following the pattern described below:
 ```json
 {
-  "database": "postgres",
+  "connect_timeout": 30,
+  "dbname": "postgres",
   "host": "localhost",
-  "max_connection": 10,
+  "maxconnections": 5,
   "password": "postgres",
   "port": 5432,
   "print_sql": true,
-  "username": "postgres"
+  "user": "postgres
 }
 ```
 
