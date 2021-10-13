@@ -227,9 +227,9 @@ where 1 = 1
 {{#id}}
 and id = %(id)s
 {{/id}}
-{{#id}}
+{{#name}}
 and name like %(name)s
-{{/id}}
+{{/name}}
 ```
 
 #### Select with filters
